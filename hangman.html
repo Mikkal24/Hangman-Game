@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<!--Javascript-->
+	
+	<!--CSS-->
+	<link rel = "stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel = "stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body onkeydown="testFunction(event)">
+	<header>
+		<!-- <h1 class="text-center" style="border:dashed black 1px;color:red;">LAVA PIT</h1> -->
+		<img src="assets/images/title.png" style="margin:auto; display:block">
+	</header>
+	<div class="row">
+		<div class="col-md-5 col-md-offset-1" id="left" style="border:solid orange 5px; height:80vh;">
+			<img src="assets/images/lava.png" style="height:30%; width:100%;position:absolute;bottom:0">
+			<img src="assets/images/backgroundchains.png" style="height:30%;display:inline-block;">
+			<img src="assets/images/backgroundchains.png" style="height:30%;display:inline-block;">
+			<img src="assets/images/backgroundchains.png" style="height:30%;float:right;">
+			<img src="assets/images/chain.png" style="position:absolute; left:200px; height:200px"> 
+			<img id="victim" src="assets/images/zelda_victim.png" style="position:absolute; left:245px; top:150px; height:150px">
+		</div>
+		<div class="col-md-5" id="right" style="height:80vh">
+			<div class="col-md-10 col-md-offset-1" id="right-1" style="border:5px solid orange">
+				<p>Your beloved hero is doomed unless you can guess the correct word. Good luck!</p>
+				<div class="correctLetters">
+					<ul id="blankArray">
+					</ul>
+				</div>
+				<div class="incorrectLetters">
+
+					<ul id="guessArray">
+					</ul>
+				</div>
+				<p style="display: inline-block;"> You have<p id="lives" style="display: inline-block;margin-left:5px"></p> guesses before they perish!</p>
+			</div>
+		</div>
+	</div>
+	<footer class = "row" style="border-top:5px orange solid; background-color:black; height:50px;margin-top:30px; width:100%;">
+		<p class="text-center" style="color:red;">Copyright Michael Sorensen 2017</p>
+	</footer>
+	<script type="text/javascript" src="assets/javascript/logic.js"></script>
+</body>
+</html>

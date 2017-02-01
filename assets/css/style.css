@@ -1,0 +1,49 @@
+#left{
+	padding: 0px 0px 0px 0px;
+	background-color: black;
+}
+footer{
+	width:100%;
+}
+ul{
+	list-style-type:none;
+}
+li{
+	float:left;
+	margin-left: 4px;
+	border-bottom: solid white 1px;
+	width: 15px;
+	height:30px;
+	text-align:center;
+}
+.correctLetters, .incorrectLetters{
+	height:100px;
+}
+
+body{
+	background-image:url("http://i1152.photobucket.com/albums/p486/bossedit8/background2-43_zps0ce46fe4.gif");
+}
+
+#right-1{
+	background: black;
+	color:white;
+}
+
+#victim{
+	transform: rotate(-20deg);
+  	animation-name: rotate;
+  	/* animation-delay: 3s; */
+  	animation-duration: 2s;
+  	animation-iteration-count: infinite;
+  	animation-direction: alternate;
+  	transform-origin: 50% 0%;
+  	animation-timing-function: ease-in-out;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
